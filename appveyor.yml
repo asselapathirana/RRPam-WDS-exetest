@@ -4,7 +4,7 @@ install:
   - cinst -y unrar
   - unrar x file.rar
   - dir 
-  - innounp -x -d.\rrpamwds 
+  - innounp -x setup.exe -d.\rrpamwds 
   - .\rrpamwds\rrpamwds.exe 
   
    
