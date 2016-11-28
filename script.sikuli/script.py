@@ -1,5 +1,3 @@
-from lackey import *
-
 find("1480339253994.png")
 for n in range(10):
     click("1480339271093.png")

@@ -8,14 +8,14 @@ install:
   - unrar x file.rar
   - dir 
   - innounp -x setup.exe -d.\rrpamwds > log
-  - pip install Lackey
+  - ps: Start-FileDownload "https://launchpad.net/sikuli/sikulix/1.1.0/+download/sikulixsetup-1.1.0.jarhttps://launchpad.net/sikuli/sikulix/1.1.0/+download/sikulixsetup-1.1.0.jar"
+  - java -jar sikulixsetup-1.1.0.jar options 1.1 2 3
  
 build: off
 
 test_script:
   - ps: C:\\projects\\rrpam-wds-exetest\\run.ps 
-  - cd script.sikuli
-  - python script.py
+  - java -jar sikulix.jar -r script.sikuli\script.py
 
 
   
