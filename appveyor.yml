@@ -15,7 +15,8 @@ build: off
 
 test_script:
   - ps: C:\\projects\\rrpam-wds-exetest\\run.ps 
-  - java -jar sikulix.jar -r script.sikuli\script.py
+  - runsikulix.cmd  -r script.sikuli
+
 
 
   
