@@ -8,7 +8,7 @@ install:
   - unrar x file.rar
   - dir 
   - innounp -x setup.exe -d.\rrpamwds > log
-  - ps: Start-FileDownload "https://launchpad.net/sikuli/sikulix/1.1.0/+download/sikulixsetup-1.1.0.jarhttps://launchpad.net/sikuli/sikulix/1.1.0/+download/sikulixsetup-1.1.0.jar"
+  - ps: Start-FileDownload "https://launchpad.net/sikuli/sikulix/1.1.0/+download/sikulixsetup-1.1.0.jar"
   - java -jar sikulixsetup-1.1.0.jar options 1.1 2 3
  
 build: off
