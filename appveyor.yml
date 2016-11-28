@@ -5,7 +5,7 @@ install:
   - unrar x file.rar
   - dir 
   - innounp -x setup.exe -d.\rrpamwds > log
-  - ".\rrpamwds\{app}\rrpamwds.exe" 
+  - ".\\rrpamwds\\{app}\\rrpamwds.exe" 
   
   
   
