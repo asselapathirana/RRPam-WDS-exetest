@@ -9,12 +9,11 @@ install:
   - dir 
   - innounp -x setup.exe -d.\rrpamwds > log
   - pip install Lackey
-  - set PATH="C:\\projects\\rrpam-wds-exetest\\rrpamwds\\{app}" 
  
 build: off
 
 test_script:
-  - ps: $MyProcess = Start-Process $env:PATH\rrpamwds.exe -PassThru
+  - ps: run.ps 
   - cd script.sikuli
   - python script.py
 
