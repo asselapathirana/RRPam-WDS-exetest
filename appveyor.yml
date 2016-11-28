@@ -14,7 +14,7 @@ install:
 build: off
 
 test_script:
-  - ps: C:\\projects\\rrpam-wds-exetest\\run.ps 
+  - ps: C:\\projects\\rrpam-wds-exetest\\run.ps1 
   - runsikulix.cmd  -r script.sikuli
 
 
