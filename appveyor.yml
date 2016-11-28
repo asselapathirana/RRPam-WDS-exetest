@@ -3,8 +3,8 @@ install:
   - ps: Start-FileDownload "https://sourceforge.net/projects/innounp/files/latest/download" -FileName file.rar
   - cinst -y unrar
   - unrar x file.rar
-  - cd file
-  - innounp -x -d..\setup.exe 
-  - ..\rrpamwds\rrpamwds.exe 
+  - dir 
+  - innounp -x -d.\rrpamwds 
+  - .\rrpamwds\rrpamwds.exe 
   
    
