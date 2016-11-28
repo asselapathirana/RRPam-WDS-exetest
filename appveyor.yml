@@ -13,7 +13,7 @@ install:
 build: off
 
 test_script:
-  - ps: run.ps 
+  - ps: C:\\projects\\rrpam-wds-exetest\\run.ps 
   - cd script.sikuli
   - python script.py
 
