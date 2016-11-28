@@ -14,7 +14,7 @@ install:
 build: off
 
 test_script:
-  - rrpamwds.exe
+  - ps: $MyProcess = Start-Process rrpamwds.exe -PassThru
   - cd script.sikuli
   - python script.py
 
