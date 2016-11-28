@@ -9,7 +9,11 @@ install:
   - dir 
   - innounp -x setup.exe -d.\rrpamwds > log
   - cd ".\\rrpamwds\\{app}" 
+ 
+build: off
+
+test_script:
   - rrpamwds.exe
-  
+
   
    
