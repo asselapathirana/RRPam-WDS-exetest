@@ -1,0 +1,14 @@
+install:
+  - $source = "https://ci.appveyor.com/api/projects/asselapathirana/rrpam-wds/artifacts/service/setup.exe?job=Environment%3A%20PYTHON_VERSION%3D3.4%2C%20USE_QT_API%3DPyQt5%2C%20PYTHON_ARCH%3D32%2C%20PLATFORM%3Dx86%2C%20PYTEST_QT_API%3Dpyqt5"
+  - $destination = "c:\tmp\setup.exe"
+  - Invoke-WebRequest $source -OutFile $destination
+  - $source = https://sourceforge.net/projects/innounp/files/latest/download
+  - $destination = "c:\tmp\setup.rar"
+  - cinst -y unrar
+  - cd c:\tmp
+  - unrar x setup.rar
+  - cd setup
+  - innounp -x -d.c:\rrpamwds
+  - c:\rrpamwds\rrpamwds.exe 
+  
+   
