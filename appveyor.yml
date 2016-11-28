@@ -8,12 +8,16 @@ install:
   - unrar x file.rar
   - dir 
   - innounp -x setup.exe -d.\rrpamwds > log
+  - pip install Lackey
   - cd ".\\rrpamwds\\{app}" 
  
 build: off
 
 test_script:
   - rrpamwds.exe
+  - cd script.sikuli
+  - python script.py
+
 
   
    
