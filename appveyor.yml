@@ -9,7 +9,7 @@ install:
   - dir 
   - innounp -x setup.exe -d.\rrpamwds > log
   - pip install Lackey
-  - cd ".\\rrpamwds\\{app}" 
+  - set PATH=C:\\projects\\rrpam-wds-exetest\\rrpamwds\\{app}" 
  
 build: off
 
