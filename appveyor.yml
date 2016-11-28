@@ -8,8 +8,8 @@ install:
   - unrar x file.rar
   - dir 
   - innounp -x setup.exe -d.\rrpamwds > log
-  - ".\\rrpamwds\\{app}\\rrpamwds.exe" 
-  
+  - cd ".\\rrpamwds\\{app}" 
+  - rrpamwds.exe
   
   
    
