@@ -3,6 +3,7 @@ init:
   
 install:
   - ps: Start-FileDownload "https://ci.appveyor.com/api/projects/$env:APPVEYOR_ACCOUNT_NAME/rrpam-wds/artifacts/service/setup.exe?job=Environment%3A%20PYTHON_VERSION%3D3.4%2C%20USE_QT_API%3DPyQt5%2C%20PYTHON_ARCH%3D32%2C%20PLATFORM%3Dx86%2C%20PYTEST_QT_API%3Dpyqt5" -FileName setup.exe
+  - ps: echo "https://ci.appveyor.com/api/projects/$env:APPVEYOR_ACCOUNT_NAME/rrpam-wds/artifacts/service/setup.exe?job=Environment%3A%20PYTHON_VERSION%3D3.4%2C%20USE_QT_API%3DPyQt5%2C%20PYTHON_ARCH%3D32%2C%20PLATFORM%3Dx86%2C%20PYTEST_QT_API%3Dpyqt5" 
   - ps: Start-FileDownload "https://sourceforge.net/projects/innounp/files/latest/download" -FileName file.rar
   - cinst -y unrar
   - unrar x file.rar
