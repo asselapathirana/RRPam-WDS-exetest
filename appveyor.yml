@@ -15,7 +15,7 @@ build: off
 
 test_script:
 #  - ps: C:\\projects\\rrpam-wds-exetest\\run.ps1 
-  -  C:\\projects\\rrpam-wds-exetest\\rrpamwds\\{app}\rrpamwds.exe" dummy
+  - ps: & "C:\\projects\\rrpam-wds-exetest\\rrpamwds\\{app}\rrpamwds.exe" dummy
 
 artifacts:
   - path: '.\\rrpamwds\\{app}\\**\screenshot*.jpg'
