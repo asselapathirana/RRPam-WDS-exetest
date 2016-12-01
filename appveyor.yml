@@ -16,6 +16,8 @@ build: off
 test_script:
   - ps: C:\\projects\\rrpam-wds-exetest\\run.ps1 
 
+artifacts:
+  - path: '**\screenshot-*.jpg'
 
 
   
