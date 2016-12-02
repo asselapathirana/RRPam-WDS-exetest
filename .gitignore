@@ -87,3 +87,8 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+#screenshots
+screenshot*.jpg
+screenshot*.png
+

@@ -1,4 +1,5 @@
 
-$env:PATH="C:\\projects\\rrpam-wds-exetest\\rrpamwds\\{app}" 
-& $env:PATH\rrpamwds.exe "dummy" 
-Start-Sleep -s 120 
+$d="$($pwd)\\rrpamwds\\{app}"  
+$MyProcess = Start-Process $d\rrpamwds.exe -PassThru -ArgumentList "ga"
+& .\screenshot.ps1
+
