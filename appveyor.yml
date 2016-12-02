@@ -18,7 +18,7 @@ test_script:
 #  - ps: C:\\projects\\rrpam-wds-exetest\\rrpamwds\\\{app\}\rrpamwds.exe dummy
 
 artifacts:
-  - path: '.\\rrpamwds\\{app}\\**\screenshot*.jpg'
+  - path: '.\\screenshot*.png'
 
 
   
