@@ -1,5 +1,5 @@
 
-$d="$($pwd)\\rrpamwds\\{app}"  
-$MyProcess = Start-Process $d\rrpamwds.exe -PassThru -ArgumentList "ga"
+$env:PATH="$($pwd)\\rrpamwds\\{app}"  
+$MyProcess = Start-Process $($env:PATH)\rrpamwds.exe -PassThru -ArgumentList "ga"
 & .\screenshot.ps1
 
